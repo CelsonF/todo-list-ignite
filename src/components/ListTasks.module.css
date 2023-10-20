@@ -1,0 +1,18 @@
+li.listItems > input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    border: 2px solid var(--blue);
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--blue-dark);
+}
+
+.markedItem {
+    text-decoration: line-through;
+    color: var(--blue-dark);
+}
