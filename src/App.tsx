@@ -1,6 +1,9 @@
+import logo from './assets/img/todo-logo.svg'
+
 import {ChangeEvent, FormEvent, useState} from 'react'
 import {PlusCircle} from '@phosphor-icons/react'
 import {TaskType, ListTasks} from "./components/ListTasks"
+
 import styles from  './App.module.css'
 import '../src/assets/css/global.css'
 
@@ -60,7 +63,7 @@ function App() {
   return (
     <>
       <header>
-        <h1> to<span className={styles.titleH1}>do</span></h1>
+        <h1> <img className={styles.logo} src={logo} alt="To do list with React and TS" /> to<span className={styles.titleH1}>do</span></h1>
       </header>
       <main>
         <div className={styles.contentTasks}>
