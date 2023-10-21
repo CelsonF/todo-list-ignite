@@ -1,4 +1,6 @@
 import { ChangeEvent } from "react";
+import { Trash } from "@phosphor-icons/react";
+
 import styles from "./ListTasks.module.css";
 
 export interface TaskType {
@@ -31,7 +33,7 @@ export function ListTasks({task ,onDeleteTask , onMarkTask}: TaskProps) {
         <li className={styles.listItems}>
                  <input type="checkbox" onChange={handleMarkTask} />
                  <p className={task.done === true ? styles.markedItem : ""}>{task.description}</p>
-                 <button onClick={handleDeleteItem}>Remover</button>
+                 <button className={styles.trashButton} onClick={handleDeleteItem} title="Remove"> <Trash size={18} className={styles.trashIcon} /> </button>
          </li>
     )
 }

@@ -77,6 +77,10 @@ function App() {
             />
           <button type="submit" className={styles.addTask}> Criar <PlusCircle size={16} /> </button>
         </form>
+        <section className={styles.stats} >
+          <div>Tarefas criadas <button> {tasks.length} </button> </div>
+          <div>Concluídas <button> {tasks.filter((task) => task.done === true).length} de {tasks.length} </button> </div>
+        </section>
         <ul>
           {tasks.map((tasks,index) => {
                 return (

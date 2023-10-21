@@ -21,6 +21,13 @@ main {
 }
 
 
+main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
 
 .contentTasks {
   margin:0 auto;
@@ -93,3 +100,45 @@ main {
 .logo {
   margin-right: 8px;
 }
+
+
+.stats  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.stats > div {
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stats button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  border: none;
+
+  font-size: 12px;
+  color: var(--gray-200);
+  font-weight: bold;
+  padding: 2px 8px;
+  background-color: var(--gray-400);
+  border-radius: 1rem;
+}
+
+.stats div:first-child {
+  color:var(--blue)
+}
+
+.stats div:last-child { 
+  color:var(--purple)
+}
+

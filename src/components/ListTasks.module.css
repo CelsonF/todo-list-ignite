@@ -2,17 +2,61 @@ li.listItems > input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 1rem;
-    height: 1rem;
+    width: 16px;
+    height: 16px;
     border-radius: 100%;
     border: 2px solid var(--blue);
+    cursor: pointer;
 }
 
-input[type="checkbox"]:checked {
-    background-color: var(--blue-dark);
+li.listItems >  input[type="checkbox"]:checked {
+    background-color: var(--purple);
+    border: 2px solid var(--purple);
+    accent-color: var(--purple);
+    color: aliceblue;
 }
 
 .markedItem {
     text-decoration: line-through;
-    color: var(--blue-dark);
+    color: var(--gray-300);
 }
+
+.listItems {
+    color: var(--gray-100);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--gray-500);
+    width: 100%;
+    margin-bottom: 12px;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+    .listItems > p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .trashButton {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: none;
+        background-color: transparent;
+        padding: 4px ;
+        cursor: pointer;
+    }
+
+    .trashIcon {
+        color: var(--gray-300);
+        transition: 0.1s ease-out;
+    }
+
+    .trashIcon:hover {
+        color: var(--danger);
+        transition: 0.1s ease-in;
+    }
